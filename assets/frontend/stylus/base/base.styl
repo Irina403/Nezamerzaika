@@ -1,0 +1,381 @@
+html
+  height 100%
+
+.hide
+  display none
+
+.hidden
+  overflow hidden
+
+.clearfix
+  zoom 1
+
+.clearfix:after
+  clear both
+  content ''
+  display block
+  height 0
+  visibility hidden
+
+.nobr
+  white-space nowrap
+
+.italic
+  font-style italic
+
+.float-left
+  float left
+
+.float-right
+  float right
+
+.align-left
+  text-align left
+
+.align-right
+  text-align right
+
+.align-center
+  text-align center
+
+a
+  text-decoration none
+  color inherit
+
+p
+  margin 0
+  
+img
+  display block
+  max-width 100%
+    
+strong
+  font-weight 600
+
+.mainScreen
+    overflow-x: hidden
+    &__box
+        wrapper()
+    &__wrapper
+        // position absolute
+        height 100vh
+        width 100%
+        // width 1000px
+        // height 500px
+        // background-color: #455
+        background-image: url(../images/background.jpg)
+        background-size: cover
+        background-position: center
+        z-index -1
+    &__title
+        padding-top 14rem
+        font-family $ff
+        font-size 70px
+        line-height: 70px
+        color $black
+        xs(font-size,55px)
+        xs(line-height,55px)
+    &__subtitle
+        margin-top 44px
+        font-size: 25px;
+        line-height: 34px;
+        font-family $ff3
+
+.mainButton
+    margin-top 45px
+    display flex
+    align-items: center
+    justify-content: center
+    width 264px
+    height 66px
+    background-color: $mainColor
+    border-radius: 50px
+    font-size 22px
+    color #fff
+.table
+    wrapper()
+
+.blockTable
+    position relative
+    &__title
+        margin-top 110px
+        font-size 60px
+        color $black
+        font-family $ff1
+        xs(margin-top,20px)
+        xs(font-size,40px)
+.titleRow 
+    text-align center
+
+ТАБЛИЦЫ
+.blockTable__wrapp
+    margin-top 60px
+
+table 
+    // width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border 1px solid #BDBDBD;
+    // border-radius: 10px;
+    display block
+  
+thead
+    background-color: $black
+    // border-radius: 10px;
+
+
+table tr 
+    padding: 2px;
+  
+ 
+table th, table td 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    width 10%
+    font-size: 22px;
+    font-family $ff3 
+    xs(width, 100%)
+    padding-left 10px
+  
+td 
+  border: 1px solid  #BDBDBD;
+
+  
+
+table th 
+    color: #000;
+    background-color: $style2
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family $ff3
+    padding-left 10px
+    border: 1px solid  #BDBDBD;
+    // border-radius: 10px;
+  
+.th_style
+    color #fff
+.blockTable__button
+    margin-left: auto
+    margin-right: auto
+
+.blockPage
+  wrapper()
+  position relative
+  &__title
+      margin-top 110px
+      font-size 60px
+      color $black
+      font-family $ff1
+      xs(margin-top,20px)
+      xs(font-size,40px)
+   
+.backgroundStyle
+  background-image: url(../images/back-bloc.jpg)
+  background-repeat: no-repeat
+  background-position: top right 
+.advantages
+  margin-top 50px
+  display: flex
+  justify-content: space-between
+  height 100%
+  &__item
+    margin-bottom 16px
+    width 100%
+    padding 24px 42px
+    display: flex
+    align-items: center
+    // justify-content: space-between
+    max-width 565px
+    height 118px
+    border: 0.5px solid #2DADFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+  &__icon
+    margin-right 20px
+  &__title
+    font-size: 20px;
+    line-height: 27px;
+    font-family: $ff4
+  &__text
+    margin-top 5px
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $ff2
+
+.bestProducer
+  position relative
+  margin-top 60px
+  &__box
+    display flex
+    justify-content: space-between
+  &__item 
+    margin-bottom 4%
+  &__title
+    font-size: 20px;
+    line-height: 27px;
+    font-family: $ff4
+  &__text 
+    margin-top 5px
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $ff2
+  &__row:nth-child(2n)
+    margin-top: 7%
+.buttonSlide
+  &__arrowPrev
+    border: 1px solid #2DADFF
+    width: 72px
+    height: 40px
+    border-radius: 50px 0px 0px 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  &__arrowNext
+    border: 1px solid #2DADFF
+    width: 72px
+    height: 40px
+    border-radius: 0px 50px 50px 0px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  &__box 
+    display: flex
+    position: absolute;
+    right: 37%;
+    bottom: 0%;
+.activeButton
+  background-color: #2DADFF
+
+.blockDesc
+  position relative
+  background-image: url(../images/img2.png)
+  background-repeat: no-repeat
+  background-position: top right 
+  background-size: 50%
+  padding-bottom: 180px
+  &__row
+    wrapper()
+    display: flex
+    margin-top 130px
+  &__col
+    width 50%
+  &__title
+    margin-bottom 45px
+    font-size: 25px;
+    line-height: 34px;
+    font-family: $ff4
+  &__text
+    margin-top 15px
+    font-size: 20px;
+    line-height: 27px;
+    font-family: $ff2
+  &__img
+    width: 100%
+
+.blockPage__title-center
+  text-align: center
+// .shema
+//   position: relative
+  
+//   &__row
+//     position absolute
+//     padding-top 100px
+//     right 0
+//     left 0
+//     padding-bottom 100px
+//     background-image: url(../images/shema.png)
+//     background-repeat: no-repeat
+//     background-position: 75% 45%
+    // background-image: url(../images/shema.png)
+    // background-repeat: no-repeat
+    // background-position: 110% 46%
+// .shemaList 
+//   position relative
+//   wrapper()
+//   display flex
+//   align-items: center
+//   justify-content: space-between
+//   &__item 
+//     margin-top 80%
+//     width: 100%
+//     max-width: 205px
+//   &__title
+//     font-size: 20px
+//     line-height: 27px;
+//     font-family: $ff4
+//   &__text
+//     margin-top 10px
+//     font-size: 18px;
+//     line-height: 25px;
+//     font-family: $ff2
+// .shemaList__box-first
+//   margin-top: -16%
+// .shemaList__box-second
+//   margin-top: 12%
+
+.blockDelivery
+  display flex
+  align-items: flex-end
+
+  &__title
+    margin-bottom 45px
+    font-size: 25px;
+    line-height: 34px;
+    font-family: $ff4
+  &__text
+    margin-top 15px
+    font-size: 20px;
+    line-height: 27px;
+    font-family: $ff2
+  &__col
+    width: 60%
+    margin-left: 15%
+
+.certificates
+  &__list
+    margin-top: 70px
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+
+
+
+@media screen and (max-width: 600px) 
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+
+  }
+  table tr {
+    margin-bottom: 10px
+    display: block;
+    // border-bottom: 2px solid #ddd;
+  }
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border: 1px solid #BDBDBD;
+    // border-bottom: 1px dotted #ccc;
+    // border-right: 1px solid transparent;
+
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+

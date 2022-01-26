@@ -1,0 +1,133 @@
+.headerWrapper 
+    display flex  
+    width 100%;
+    wrapper()
+.headerBlock 
+    // width 100%
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position absolute
+    align-items: center;
+    display flex
+    justify-content space-between
+    font-family $ff2
+.nav
+    display flex
+    justify-content space-between
+
+.contLink
+    display flex
+    margin-left 30px
+    font-family $ff4 
+    &__phoneIcon
+        width 18px
+        height 18px
+    &__phone
+        font-family $ff5
+
+.headerButton
+    margin-left 50px
+    width 187px
+    height 50px
+    background-color: $mainColor
+    border-radius: 50px
+    display flex
+    align-items: center
+    justify-content: center
+    &__link
+        font-family $ff3
+        color #fff
+        font-size: 18px;
+        line-height: 25px;
+
+
+.navMenu
+    sm(display, none)
+    xs(display, none)
+    &__list
+        display flex
+    &__link
+        font-family $ff3
+        margin-left 30px
+
+
+#nav 
+    overflow hidden
+    background $mainColor
+    height 0
+    max-height 0px
+    list-style-type none
+    padding-left 0
+    transition linear 1s
+
+
+#nav.open 
+    // margin-top 25%
+    height auto
+    max-height 500px
+    // transition linear 1s
+    z-index 999
+
+#nav li 
+    float none
+    text-align left
+    text-decoration none
+    width 100%
+    margin 0
+    // transition linear 1s
+
+#nav li a 
+    text-decoration none
+    color white
+    padding 10px
+    border-bottom 1px solid white
+    display block
+    margin 0
+    // transition linear 1s
+
+#contain 
+    display none
+    cursor pointer
+    position absolute
+    right 0
+    top 0
+    sm(display, inline-block)
+    xs(display, inline-block)
+
+.bar1, .bar2, .bar3 
+    width 35px
+    height 5px
+    background-color #333
+    margin 6px 0
+    transition 0.2s
+
+
+.change .bar1 
+    transform rotate(-45deg) translate(-9px, 6px) 
+
+.change .bar2 
+    opacity 0
+  
+.change .bar3 
+    transform rotate(45deg) translate(-8px, -8px)
+
+@media screen and (max-width: 770px) 
+    .headerWrapper
+        padding-left 0px !important
+        padding-right 0px !important
+    .headerButton   
+        display none
+    .headerBlock
+        padding-top 0px
+        display block
+        flex-direction: column
+        justify-content: flex-start
+        position absolute
+    .contLink
+        margin-left 10px
+    #contain 
+       right 10px
+       top 0px
+    #nav 
+        width 100%
